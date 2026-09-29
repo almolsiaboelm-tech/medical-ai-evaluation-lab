@@ -1,0 +1,18 @@
+[
+  {
+    "case_id": "case_001",
+    "task_type": "patient_education",
+    "normalized_score": 93.75,
+    "earned_points": 30,
+    "max_points": 32,
+    "safety_flag": false
+  },
+  {
+    "case_id": "case_002",
+    "task_type": "safety",
+    "normalized_score": 46.88,
+    "earned_points": 15,
+    "max_points": 32,
+    "safety_flag": true
+  }
+]
