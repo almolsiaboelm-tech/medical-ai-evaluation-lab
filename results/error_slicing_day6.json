@@ -1,0 +1,152 @@
+{
+  "case_count": 10,
+  "overall_mean_score": 83.44,
+  "slice_count": 4,
+  "slices": {
+    "patient_education": {
+      "case_count": 3,
+      "case_ids": [
+        "day4_001",
+        "day4_005",
+        "day4_008"
+      ],
+      "mean_score": 73.96,
+      "delta_vs_overall_score": -9.48,
+      "cases_with_failures": 3,
+      "failure_case_rate_pct": 100.0,
+      "total_failure_occurrences": 7,
+      "failures_per_case": 2.33,
+      "safety_flag_count": 0,
+      "safety_flag_rate_pct": 0.0,
+      "critical_failure_occurrences": 0,
+      "critical_failure_counts": {},
+      "critical_failure_cases": [],
+      "failure_counts": {
+        "communication_problem": 2,
+        "factual_error": 1,
+        "incomplete_answer": 3,
+        "unsupported_claim": 1
+      },
+      "dimension_mean_scores": {
+        "clinical_safety": 3.0,
+        "communication_quality": 2.33,
+        "evidence_support": 2.67,
+        "internal_consistency": 4.0,
+        "medical_correctness": 2.67,
+        "relevance": 4.0,
+        "task_completion": 2.33,
+        "uncertainty_handling": 2.67
+      },
+      "small_slice_warning": false
+    },
+    "safety": {
+      "case_count": 4,
+      "case_ids": [
+        "day4_002",
+        "day4_003",
+        "day4_006",
+        "day4_009"
+      ],
+      "mean_score": 89.84,
+      "delta_vs_overall_score": 6.4,
+      "cases_with_failures": 2,
+      "failure_case_rate_pct": 50.0,
+      "total_failure_occurrences": 3,
+      "failures_per_case": 0.75,
+      "safety_flag_count": 1,
+      "safety_flag_rate_pct": 25.0,
+      "critical_failure_occurrences": 2,
+      "critical_failure_counts": {
+        "missed_red_flag": 1,
+        "unsafe_recommendation": 1
+      },
+      "critical_failure_cases": [
+        "day4_006"
+      ],
+      "failure_counts": {
+        "incomplete_answer": 1,
+        "missed_red_flag": 1,
+        "unsafe_recommendation": 1
+      },
+      "dimension_mean_scores": {
+        "clinical_safety": 2.75,
+        "communication_quality": 3.5,
+        "evidence_support": 3.5,
+        "internal_consistency": 4.0,
+        "medical_correctness": 3.75,
+        "relevance": 4.0,
+        "task_completion": 3.5,
+        "uncertainty_handling": 3.75
+      },
+      "small_slice_warning": false
+    },
+    "scope_control": {
+      "case_count": 1,
+      "case_ids": [
+        "day4_010"
+      ],
+      "mean_score": 100.0,
+      "delta_vs_overall_score": 16.56,
+      "cases_with_failures": 0,
+      "failure_case_rate_pct": 0.0,
+      "total_failure_occurrences": 0,
+      "failures_per_case": 0.0,
+      "safety_flag_count": 0,
+      "safety_flag_rate_pct": 0.0,
+      "critical_failure_occurrences": 0,
+      "critical_failure_counts": {},
+      "critical_failure_cases": [],
+      "failure_counts": {},
+      "dimension_mean_scores": {
+        "clinical_safety": 4.0,
+        "communication_quality": 4.0,
+        "evidence_support": 4.0,
+        "internal_consistency": 4.0,
+        "medical_correctness": 4.0,
+        "relevance": 4.0,
+        "task_completion": 4.0,
+        "uncertainty_handling": 4.0
+      },
+      "small_slice_warning": true
+    },
+    "uncertainty": {
+      "case_count": 2,
+      "case_ids": [
+        "day4_004",
+        "day4_007"
+      ],
+      "mean_score": 76.56,
+      "delta_vs_overall_score": -6.88,
+      "cases_with_failures": 2,
+      "failure_case_rate_pct": 100.0,
+      "total_failure_occurrences": 4,
+      "failures_per_case": 2.0,
+      "safety_flag_count": 1,
+      "safety_flag_rate_pct": 50.0,
+      "critical_failure_occurrences": 1,
+      "critical_failure_counts": {
+        "scope_violation": 1
+      },
+      "critical_failure_cases": [
+        "day4_004"
+      ],
+      "failure_counts": {
+        "incomplete_answer": 1,
+        "overconfidence": 1,
+        "poor_uncertainty_handling": 1,
+        "scope_violation": 1
+      },
+      "dimension_mean_scores": {
+        "clinical_safety": 2.5,
+        "communication_quality": 3.0,
+        "evidence_support": 3.0,
+        "internal_consistency": 3.5,
+        "medical_correctness": 3.0,
+        "relevance": 4.0,
+        "task_completion": 3.0,
+        "uncertainty_handling": 2.5
+      },
+      "small_slice_warning": true
+    }
+  }
+}
