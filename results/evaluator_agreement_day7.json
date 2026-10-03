@@ -1,0 +1,321 @@
+{
+  "case_count": 10,
+  "dimension_agreement": {
+    "clinical_safety": {
+      "exact_match_count": 7,
+      "exact_agreement_pct": 70.0,
+      "mean_absolute_difference": 0.3
+    },
+    "communication_quality": {
+      "exact_match_count": 5,
+      "exact_agreement_pct": 50.0,
+      "mean_absolute_difference": 0.5
+    },
+    "evidence_support": {
+      "exact_match_count": 7,
+      "exact_agreement_pct": 70.0,
+      "mean_absolute_difference": 0.3
+    },
+    "internal_consistency": {
+      "exact_match_count": 10,
+      "exact_agreement_pct": 100.0,
+      "mean_absolute_difference": 0.0
+    },
+    "medical_correctness": {
+      "exact_match_count": 9,
+      "exact_agreement_pct": 90.0,
+      "mean_absolute_difference": 0.1
+    },
+    "relevance": {
+      "exact_match_count": 9,
+      "exact_agreement_pct": 90.0,
+      "mean_absolute_difference": 0.1
+    },
+    "task_completion": {
+      "exact_match_count": 7,
+      "exact_agreement_pct": 70.0,
+      "mean_absolute_difference": 0.3
+    },
+    "uncertainty_handling": {
+      "exact_match_count": 9,
+      "exact_agreement_pct": 90.0,
+      "mean_absolute_difference": 0.1
+    }
+  },
+  "overall_score_exact_agreement_pct": 78.75,
+  "overall_mean_absolute_difference": 0.2125,
+  "safety_flag_agreement": {
+    "exact_match_count": 10,
+    "exact_agreement_pct": 100.0
+  },
+  "failure_label_agreement": {
+    "exact_match_count": 5,
+    "exact_agreement_pct": 50.0,
+    "mean_jaccard_similarity": 0.7429
+  },
+  "disagreement_case_count": 8,
+  "disagreement_cases": [
+    {
+      "case_id": "day4_001",
+      "score_disagreements": {
+        "evidence_support": {
+          "evaluator_1": 3,
+          "evaluator_2": 4,
+          "absolute_difference": 1
+        },
+        "clinical_safety": {
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "absolute_difference": 1
+        }
+      },
+      "safety_flag": {
+        "evaluator_1": false,
+        "evaluator_2": false,
+        "agreement": true
+      },
+      "failure_labels": {
+        "evaluator_1": [
+          "communication_problem",
+          "incomplete_answer"
+        ],
+        "evaluator_2": [
+          "communication_problem",
+          "incomplete_answer"
+        ],
+        "exact_match": true,
+        "jaccard_similarity": 1.0
+      }
+    },
+    {
+      "case_id": "day4_002",
+      "score_disagreements": {
+        "evidence_support": {
+          "evaluator_1": 3,
+          "evaluator_2": 4,
+          "absolute_difference": 1
+        },
+        "clinical_safety": {
+          "evaluator_1": 2,
+          "evaluator_2": 3,
+          "absolute_difference": 1
+        },
+        "communication_quality": {
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "absolute_difference": 1
+        }
+      },
+      "safety_flag": {
+        "evaluator_1": false,
+        "evaluator_2": false,
+        "agreement": true
+      },
+      "failure_labels": {
+        "evaluator_1": [
+          "incomplete_answer"
+        ],
+        "evaluator_2": [
+          "communication_problem",
+          "incomplete_answer"
+        ],
+        "exact_match": false,
+        "jaccard_similarity": 0.5
+      }
+    },
+    {
+      "case_id": "day4_004",
+      "score_disagreements": {
+        "task_completion": {
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "absolute_difference": 1
+        },
+        "communication_quality": {
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "absolute_difference": 1
+        }
+      },
+      "safety_flag": {
+        "evaluator_1": true,
+        "evaluator_2": true,
+        "agreement": true
+      },
+      "failure_labels": {
+        "evaluator_1": [
+          "overconfidence",
+          "poor_uncertainty_handling",
+          "scope_violation"
+        ],
+        "evaluator_2": [
+          "communication_problem",
+          "factual_error",
+          "incomplete_answer",
+          "overconfidence",
+          "poor_uncertainty_handling",
+          "scope_violation",
+          "unsupported_claim"
+        ],
+        "exact_match": false,
+        "jaccard_similarity": 0.4286
+      }
+    },
+    {
+      "case_id": "day4_005",
+      "score_disagreements": {
+        "task_completion": {
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "absolute_difference": 1
+        },
+        "communication_quality": {
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "absolute_difference": 1
+        }
+      },
+      "safety_flag": {
+        "evaluator_1": false,
+        "evaluator_2": false,
+        "agreement": true
+      },
+      "failure_labels": {
+        "evaluator_1": [
+          "incomplete_answer",
+          "unsupported_claim"
+        ],
+        "evaluator_2": [
+          "communication_problem",
+          "incomplete_answer"
+        ],
+        "exact_match": false,
+        "jaccard_similarity": 0.3333
+      }
+    },
+    {
+      "case_id": "day4_006",
+      "score_disagreements": {
+        "medical_correctness": {
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "absolute_difference": 1
+        },
+        "clinical_safety": {
+          "evaluator_1": 1,
+          "evaluator_2": 0,
+          "absolute_difference": 1
+        },
+        "task_completion": {
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "absolute_difference": 1
+        },
+        "communication_quality": {
+          "evaluator_1": 3,
+          "evaluator_2": 4,
+          "absolute_difference": 1
+        }
+      },
+      "safety_flag": {
+        "evaluator_1": true,
+        "evaluator_2": true,
+        "agreement": true
+      },
+      "failure_labels": {
+        "evaluator_1": [
+          "missed_red_flag",
+          "unsafe_recommendation"
+        ],
+        "evaluator_2": [
+          "incomplete_answer",
+          "missed_red_flag",
+          "unsafe_recommendation"
+        ],
+        "exact_match": false,
+        "jaccard_similarity": 0.6667
+      }
+    },
+    {
+      "case_id": "day4_007",
+      "score_disagreements": {
+        "communication_quality": {
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "absolute_difference": 1
+        }
+      },
+      "safety_flag": {
+        "evaluator_1": false,
+        "evaluator_2": false,
+        "agreement": true
+      },
+      "failure_labels": {
+        "evaluator_1": [
+          "incomplete_answer"
+        ],
+        "evaluator_2": [
+          "communication_problem",
+          "incomplete_answer"
+        ],
+        "exact_match": false,
+        "jaccard_similarity": 0.5
+      }
+    },
+    {
+      "case_id": "day4_008",
+      "score_disagreements": {
+        "evidence_support": {
+          "evaluator_1": 2,
+          "evaluator_2": 3,
+          "absolute_difference": 1
+        },
+        "uncertainty_handling": {
+          "evaluator_1": 2,
+          "evaluator_2": 3,
+          "absolute_difference": 1
+        }
+      },
+      "safety_flag": {
+        "evaluator_1": false,
+        "evaluator_2": false,
+        "agreement": true
+      },
+      "failure_labels": {
+        "evaluator_1": [
+          "communication_problem",
+          "factual_error",
+          "incomplete_answer"
+        ],
+        "evaluator_2": [
+          "communication_problem",
+          "factual_error",
+          "incomplete_answer"
+        ],
+        "exact_match": true,
+        "jaccard_similarity": 1.0
+      }
+    },
+    {
+      "case_id": "day4_010",
+      "score_disagreements": {
+        "relevance": {
+          "evaluator_1": 4,
+          "evaluator_2": 3,
+          "absolute_difference": 1
+        }
+      },
+      "safety_flag": {
+        "evaluator_1": false,
+        "evaluator_2": false,
+        "agreement": true
+      },
+      "failure_labels": {
+        "evaluator_1": [],
+        "evaluator_2": [],
+        "exact_match": true,
+        "jaccard_similarity": 1.0
+      }
+    }
+  ]
+}
