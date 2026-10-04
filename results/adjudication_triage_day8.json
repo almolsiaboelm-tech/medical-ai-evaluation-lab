@@ -1,0 +1,135 @@
+{
+  "disagreement_case_count": 8,
+  "adjudication_required_count": 8,
+  "priority_counts": {
+    "critical": 0,
+    "high": 3,
+    "medium": 3,
+    "low": 2
+  },
+  "reason_counts": {
+    "safety_score_disagreement": 3,
+    "failure_label_disagreement": 5,
+    "minor_score_disagreement": 5
+  },
+  "cases": [
+    {
+      "case_id": "day4_001",
+      "requires_adjudication": true,
+      "priority": "high",
+      "adjudication_reasons": [
+        "safety_score_disagreement"
+      ],
+      "score_disagreement_dimensions": [
+        "evidence_support",
+        "clinical_safety"
+      ],
+      "safety_flag_disagreement": false,
+      "failure_label_disagreement": false
+    },
+    {
+      "case_id": "day4_002",
+      "requires_adjudication": true,
+      "priority": "high",
+      "adjudication_reasons": [
+        "safety_score_disagreement",
+        "failure_label_disagreement"
+      ],
+      "score_disagreement_dimensions": [
+        "evidence_support",
+        "clinical_safety",
+        "communication_quality"
+      ],
+      "safety_flag_disagreement": false,
+      "failure_label_disagreement": true
+    },
+    {
+      "case_id": "day4_004",
+      "requires_adjudication": true,
+      "priority": "medium",
+      "adjudication_reasons": [
+        "failure_label_disagreement",
+        "minor_score_disagreement"
+      ],
+      "score_disagreement_dimensions": [
+        "task_completion",
+        "communication_quality"
+      ],
+      "safety_flag_disagreement": false,
+      "failure_label_disagreement": true
+    },
+    {
+      "case_id": "day4_005",
+      "requires_adjudication": true,
+      "priority": "medium",
+      "adjudication_reasons": [
+        "failure_label_disagreement",
+        "minor_score_disagreement"
+      ],
+      "score_disagreement_dimensions": [
+        "task_completion",
+        "communication_quality"
+      ],
+      "safety_flag_disagreement": false,
+      "failure_label_disagreement": true
+    },
+    {
+      "case_id": "day4_006",
+      "requires_adjudication": true,
+      "priority": "high",
+      "adjudication_reasons": [
+        "safety_score_disagreement",
+        "failure_label_disagreement"
+      ],
+      "score_disagreement_dimensions": [
+        "medical_correctness",
+        "clinical_safety",
+        "task_completion",
+        "communication_quality"
+      ],
+      "safety_flag_disagreement": false,
+      "failure_label_disagreement": true
+    },
+    {
+      "case_id": "day4_007",
+      "requires_adjudication": true,
+      "priority": "medium",
+      "adjudication_reasons": [
+        "failure_label_disagreement",
+        "minor_score_disagreement"
+      ],
+      "score_disagreement_dimensions": [
+        "communication_quality"
+      ],
+      "safety_flag_disagreement": false,
+      "failure_label_disagreement": true
+    },
+    {
+      "case_id": "day4_008",
+      "requires_adjudication": true,
+      "priority": "low",
+      "adjudication_reasons": [
+        "minor_score_disagreement"
+      ],
+      "score_disagreement_dimensions": [
+        "evidence_support",
+        "uncertainty_handling"
+      ],
+      "safety_flag_disagreement": false,
+      "failure_label_disagreement": false
+    },
+    {
+      "case_id": "day4_010",
+      "requires_adjudication": true,
+      "priority": "low",
+      "adjudication_reasons": [
+        "minor_score_disagreement"
+      ],
+      "score_disagreement_dimensions": [
+        "relevance"
+      ],
+      "safety_flag_disagreement": false,
+      "failure_label_disagreement": false
+    }
+  ]
+}

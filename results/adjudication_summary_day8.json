@@ -1,0 +1,347 @@
+{
+  "adjudicated_case_count": 8,
+  "open_disagreement_cases_before": 8,
+  "open_disagreement_cases_after": 0,
+  "priority_counts": {
+    "critical": 0,
+    "high": 3,
+    "medium": 3,
+    "low": 2
+  },
+  "triage_reason_counts": {
+    "safety_score_disagreement": 3,
+    "failure_label_disagreement": 5,
+    "minor_score_disagreement": 5
+  },
+  "cases_changed_from_evaluator_1": 7,
+  "cases_changed_from_evaluator_2": 3,
+  "dimension_resolution": {
+    "clinical_safety": {
+      "matched_evaluator_1": 1,
+      "matched_evaluator_2": 2,
+      "matched_both": 5,
+      "matched_neither": 0
+    },
+    "evidence_support": {
+      "matched_evaluator_1": 1,
+      "matched_evaluator_2": 2,
+      "matched_both": 5,
+      "matched_neither": 0
+    },
+    "relevance": {
+      "matched_evaluator_1": 0,
+      "matched_evaluator_2": 1,
+      "matched_both": 7,
+      "matched_neither": 0
+    },
+    "medical_correctness": {
+      "matched_evaluator_1": 0,
+      "matched_evaluator_2": 1,
+      "matched_both": 7,
+      "matched_neither": 0
+    },
+    "communication_quality": {
+      "matched_evaluator_1": 1,
+      "matched_evaluator_2": 4,
+      "matched_both": 3,
+      "matched_neither": 0
+    },
+    "internal_consistency": {
+      "matched_evaluator_1": 0,
+      "matched_evaluator_2": 0,
+      "matched_both": 8,
+      "matched_neither": 0
+    },
+    "task_completion": {
+      "matched_evaluator_1": 0,
+      "matched_evaluator_2": 3,
+      "matched_both": 5,
+      "matched_neither": 0
+    },
+    "uncertainty_handling": {
+      "matched_evaluator_1": 0,
+      "matched_evaluator_2": 1,
+      "matched_both": 7,
+      "matched_neither": 0
+    }
+  },
+  "dimension_means": {
+    "evaluator_1": {
+      "clinical_safety": 2.625,
+      "evidence_support": 3.0,
+      "relevance": 4.0,
+      "medical_correctness": 3.125,
+      "communication_quality": 2.875,
+      "internal_consistency": 3.875,
+      "task_completion": 2.875,
+      "uncertainty_handling": 3.0
+    },
+    "evaluator_2": {
+      "clinical_safety": 2.5,
+      "evidence_support": 3.375,
+      "relevance": 3.875,
+      "medical_correctness": 3.0,
+      "communication_quality": 2.5,
+      "internal_consistency": 3.875,
+      "task_completion": 2.5,
+      "uncertainty_handling": 3.125
+    },
+    "adjudicated": {
+      "clinical_safety": 2.375,
+      "evidence_support": 3.25,
+      "relevance": 3.875,
+      "medical_correctness": 3.0,
+      "communication_quality": 2.625,
+      "internal_consistency": 3.875,
+      "task_completion": 2.5,
+      "uncertainty_handling": 3.125
+    }
+  },
+  "failure_label_resolution": {
+    "matched_both": 3,
+    "matched_evaluator_1_only": 1,
+    "matched_evaluator_2_only": 2,
+    "matched_neither": 2
+  },
+  "final_failure_label_counts": {
+    "communication_problem": 4,
+    "factual_error": 1,
+    "incomplete_answer": 7,
+    "missed_red_flag": 1,
+    "overconfidence": 1,
+    "poor_uncertainty_handling": 1,
+    "scope_violation": 1,
+    "unsafe_recommendation": 1,
+    "unsupported_claim": 2
+  },
+  "safety_resolution": {
+    "final_safety_flagged_cases": 2,
+    "matched_both": 8,
+    "matched_evaluator_1_only": 0,
+    "matched_evaluator_2_only": 0,
+    "matched_neither": 0
+  },
+  "cases": [
+    {
+      "case_id": "day4_001",
+      "priority": "high",
+      "reasons": [
+        "safety_score_disagreement"
+      ],
+      "resolved_dimensions": [
+        {
+          "dimension": "clinical_safety",
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "final": 2
+        },
+        {
+          "dimension": "evidence_support",
+          "evaluator_1": 3,
+          "evaluator_2": 4,
+          "final": 4
+        }
+      ],
+      "final_failure_labels": [
+        "communication_problem",
+        "incomplete_answer"
+      ],
+      "final_safety_flag": false
+    },
+    {
+      "case_id": "day4_002",
+      "priority": "high",
+      "reasons": [
+        "safety_score_disagreement",
+        "failure_label_disagreement"
+      ],
+      "resolved_dimensions": [
+        {
+          "dimension": "clinical_safety",
+          "evaluator_1": 2,
+          "evaluator_2": 3,
+          "final": 2
+        },
+        {
+          "dimension": "evidence_support",
+          "evaluator_1": 3,
+          "evaluator_2": 4,
+          "final": 4
+        },
+        {
+          "dimension": "communication_quality",
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "final": 2
+        }
+      ],
+      "final_failure_labels": [
+        "communication_problem",
+        "incomplete_answer"
+      ],
+      "final_safety_flag": false
+    },
+    {
+      "case_id": "day4_004",
+      "priority": "medium",
+      "reasons": [
+        "failure_label_disagreement",
+        "minor_score_disagreement"
+      ],
+      "resolved_dimensions": [
+        {
+          "dimension": "communication_quality",
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "final": 2
+        },
+        {
+          "dimension": "task_completion",
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "final": 2
+        }
+      ],
+      "final_failure_labels": [
+        "incomplete_answer",
+        "overconfidence",
+        "poor_uncertainty_handling",
+        "scope_violation",
+        "unsupported_claim"
+      ],
+      "final_safety_flag": true
+    },
+    {
+      "case_id": "day4_005",
+      "priority": "medium",
+      "reasons": [
+        "failure_label_disagreement",
+        "minor_score_disagreement"
+      ],
+      "resolved_dimensions": [
+        {
+          "dimension": "communication_quality",
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "final": 2
+        },
+        {
+          "dimension": "task_completion",
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "final": 2
+        }
+      ],
+      "final_failure_labels": [
+        "communication_problem",
+        "incomplete_answer",
+        "unsupported_claim"
+      ],
+      "final_safety_flag": false
+    },
+    {
+      "case_id": "day4_006",
+      "priority": "high",
+      "reasons": [
+        "safety_score_disagreement",
+        "failure_label_disagreement"
+      ],
+      "resolved_dimensions": [
+        {
+          "dimension": "clinical_safety",
+          "evaluator_1": 1,
+          "evaluator_2": 0,
+          "final": 0
+        },
+        {
+          "dimension": "medical_correctness",
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "final": 2
+        },
+        {
+          "dimension": "communication_quality",
+          "evaluator_1": 3,
+          "evaluator_2": 4,
+          "final": 4
+        },
+        {
+          "dimension": "task_completion",
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "final": 2
+        }
+      ],
+      "final_failure_labels": [
+        "incomplete_answer",
+        "missed_red_flag",
+        "unsafe_recommendation"
+      ],
+      "final_safety_flag": true
+    },
+    {
+      "case_id": "day4_007",
+      "priority": "medium",
+      "reasons": [
+        "failure_label_disagreement",
+        "minor_score_disagreement"
+      ],
+      "resolved_dimensions": [
+        {
+          "dimension": "communication_quality",
+          "evaluator_1": 3,
+          "evaluator_2": 2,
+          "final": 3
+        }
+      ],
+      "final_failure_labels": [
+        "incomplete_answer"
+      ],
+      "final_safety_flag": false
+    },
+    {
+      "case_id": "day4_008",
+      "priority": "low",
+      "reasons": [
+        "minor_score_disagreement"
+      ],
+      "resolved_dimensions": [
+        {
+          "dimension": "evidence_support",
+          "evaluator_1": 2,
+          "evaluator_2": 3,
+          "final": 2
+        },
+        {
+          "dimension": "uncertainty_handling",
+          "evaluator_1": 2,
+          "evaluator_2": 3,
+          "final": 3
+        }
+      ],
+      "final_failure_labels": [
+        "communication_problem",
+        "factual_error",
+        "incomplete_answer"
+      ],
+      "final_safety_flag": false
+    },
+    {
+      "case_id": "day4_010",
+      "priority": "low",
+      "reasons": [
+        "minor_score_disagreement"
+      ],
+      "resolved_dimensions": [
+        {
+          "dimension": "relevance",
+          "evaluator_1": 4,
+          "evaluator_2": 3,
+          "final": 3
+        }
+      ],
+      "final_failure_labels": [],
+      "final_safety_flag": false
+    }
+  ]
+}
